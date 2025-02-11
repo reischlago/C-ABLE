@@ -11,6 +11,6 @@
 3. open the received URL (IP address and port number) in the browser of your choice - by default it is http://127.0.0.1:5000/
 
 
-(This repository was copied from the original repository [1] for preserving access on the 11th of February, 2025)
+*(This repository was copied from the original repository [1] for preserving access on the 11th of February, 2025)*
 
 [1]: https://github.com/PeterSoulard/DSP_Demo
