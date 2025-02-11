@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-100 Mapper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/converter.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        const jsonFiles = [];
+        async function fetchFiles() {
+            try {
+                const response = await fetch('/saved_routes');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+                if (data.files && Array.isArray(data.files)) {
+                    const fullPaths = data.files.map(file => `/saved_routes/${file}`);
+                    jsonFiles.push(...fullPaths);
+                } else {
+                    console.error('Invalid response format:', data);
+                }
+            } catch (error) {
+                console.error('Error fetching files:', error);
+            }
+        }
+        function triggerEditClick(fileName) {
+            console.log('Triggering edit click for:', fileName);
+            const editButtons = document.querySelectorAll('.edit');
+            editButtons.forEach(button => {
+                if (button.previousSibling.textContent === fileName + '.json') {
+                    button.click();
+                }
+            });
+        }
+        // Call the function
+        fetchFiles().then(() => {
+            console.log('Fetched files:', jsonFiles);
+            main = document.querySelector('main');
+            detailCont = document.createElement('section');
+            detailCont.id = 'file-data-output';
+            main.appendChild(detailCont);
+            jsonFiles.forEach(file => {
+                fetch(file)
+                    .then(response => response.json())
+                    .then(data => {
+                        const exportList = document.getElementById('export-list');
+                        const route = document.createElement('a');
+                        const routeCont = document.createElement('div');
+                        const download = document.createElement('div');
+                        const remove = document.createElement('div');
+                        const edit = document.createElement('div');
+                        routeCont.className = 'routeCont';
+                        route.href = file;
+                        route.target = '_blank';
+                        route.textContent = file.split('/').pop();
+                        edit.onclick = () => {
+                            fetchFileData(route.textContent.substring(0, route.textContent.length - 5), event);
+                            detailCont.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        };
+                        edit.className = 'edit';
+                        edit.textContent = 'Edit';
+                        download.className = 'download';
+                        download.textContent = 'Download';
+                        download.addEventListener('click', () => {
+                            const link = document.createElement('a');
+                            link.href = file;
+                            link.download = file.split('/').pop();
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+                        remove.className = 'remove';
+                        remove.textContent = 'Remove';
+                        remove.addEventListener('click', async () => {
+                            const isConfirmed = confirm('This action will permanently remove ' + route.textContent + ' from the system. Are you sure you want to delete this file?');
+                            if (isConfirmed) {
+                                try {
+                                    const response = await fetch(file, {
+                                        method: 'DELETE',
+                                    });
+                                    if (response.ok) {
+                                        exportList.removeChild(routeCont);
+                                        console.log(`File removed: ${file}`);
+                                    } else {
+                                        console.error(`Failed to remove file: ${response.statusText}`);
+                                    }
+                                } catch (error) {
+                                    console.error('Error removing file:', error);
+                                }
+                            } else {
+                                console.log('File deletion canceled by the user.');
+                            }
+                        });
+                        exportList.appendChild(routeCont).appendChild(route);
+                        routeCont.appendChild(edit);
+                        routeCont.appendChild(download);
+                        routeCont.appendChild(remove);
+                        sortExportListAlphabetically(exportList.id);
+                    })
+                    .catch(error => console.error('Error fetching file:', error));
+            });
+        });
+        function sortExportListAlphabetically(listId) {
+            const list = document.getElementById(listId);
+            const items = Array.from(list.children);
+
+            // Sort the items based on the text content of the `<a>` element
+            items.sort((a, b) => {
+                const textA = a.querySelector('a').textContent.toLowerCase();
+                const textB = b.querySelector('a').textContent.toLowerCase();
+                return textA.localeCompare(textB);
+            });
+
+            // Clear the current content of exportList
+            list.innerHTML = '';
+
+            // Append the sorted items back to the exportList
+            items.forEach(item => list.appendChild(item));
+        }
+    </script>
+</head>
+<body class="export-body">
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/converter">Converter</a></li>
+                <li><a href="/vizualizer">Overview</a></li>
+                <li><a href="/export" class="active">Manage cables</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="info">
+            <h1>Manage cables</h2>
+            <p>Import a new cable route that has already been converted to the S-100 standard JSON format, or click on the names of the routes to see the .json file in the browser, or edit, download or remove them using the corresponding buttons.</p>
+        </section>
+        <section id="import-interface">
+            <div class="title">Import a new cable route</div>
+            <form action="/import" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" accept=".json" required>
+                <input type="submit" value="Import">
+            </form>
+            {% if success_message %}
+                <p id="success-message">{{ success_message }}</p>
+            {% endif %}
+        </section>
+        <section id="create-new-interface">
+            <div class="title">Create a new cable route</div>
+            <form action="/new" method="post">
+                <input type="text" name="route_name" id="route_name" placeholder="Route name" required>
+                <input type="submit" value="Create new cable" id="create_new_cable">
+            </form>
+        </section>
+        <section id="export-list">
+
+        </section>
+    </main>
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                console.log('Clearing success message');
+                const successMessageElement = document.getElementById('success-message');
+                if (successMessageElement) {
+                    successMessageElement.textContent = '';
+                }
+            }, 3000);
+            setTimeout(() => {
+                if(window.location.href.includes('new')){
+                    console.log('New cable route created: {{ file_name }}');
+                    triggerEditClick('{{ file_name }}');
+                }
+            }, 300);
+        };
+    </script>
+</body>
+</html>

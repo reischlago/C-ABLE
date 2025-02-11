@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml
+	xmlns="http://earth.google.com/kml/2.1">
+	<Folder>
+		<name>SSCN_SEG2.2_BMH ADL TO BU ADL_CRS02_19-OCT-2023</name>
+		<Style id="MyStyleRoute">
+			<LineStyle>
+				<color>ffffffff</color>
+				<width>2.5</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleDA">
+			<LineStyle>
+				<color>ff000000</color>
+				<width>2.5</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleSPDA">
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleHDA">
+			<LineStyle>
+				<color>ff7f0055</color>
+				<width>3.0</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleSA">
+			<LineStyle>
+				<color>ff0055aa</color>
+				<width>2.5</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleLWP">
+			<LineStyle>
+				<color>ffff0000</color>
+				<width>2.5</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleLWPC7">
+			<LineStyle>
+				<color>ff0055ff</color>
+				<width>2.5</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStyleLW">
+			<LineStyle>
+				<color>ff00ff00</color>
+				<width>2.5</width>
+			</LineStyle>
+		</Style>
+		<Style id="MyStylePoint" >
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Folder>
+			<name>Waypoints</name>
+			<Folder>
+				<name>Start/End</name>
+				<Placemark>
+					<name>BU GDI</name>
+					<snippet></snippet>
+					<description>KP=  0.000 km
+ReverseKP=  391.772 km
+Cable Distance=  0.000 km
+Reverse Cable Distance=  396.409 km
+WD= 5 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 5 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.507366666667,-34.95935,0</coordinates>
+					</Point>
+					<visibility>1</visibility>
+				</Placemark>
+				<Placemark>
+					<name>BU ADL</name>
+					<snippet></snippet>
+					<description>KP=  391.772 km
+ReverseKP=  0.000 km
+Cable Distance=  396.409 km
+Reverse Cable Distance=  0.000 km
+WD=5 210 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  391.772 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  396.409 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>5 210 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.145233333333,-36.769,0</coordinates>
+					</Point>
+					<visibility>1</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>AC</name>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  7.689 km
+ReverseKP=  384.083 km
+Cable Distance=  7.777 km
+Reverse Cable Distance=  388.632 km
+WD= 17 m
+AC=-06.7� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  7.689 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  7.777 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 17 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-06.7� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.425383333333,-34.9751166666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  9.430 km
+ReverseKP=  382.342 km
+Cable Distance=  9.527 km
+Reverse Cable Distance=  386.882 km
+WD= 18 m
+AC=-09.0� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  9.430 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  9.527 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 18 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-09.0� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.40745,-34.98045,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  10.579 km
+ReverseKP=  381.193 km
+Cable Distance=  10.681 km
+Reverse Cable Distance=  385.728 km
+WD= 19 m
+AC=-15.0� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  10.579 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  10.681 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 19 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-15.0� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.396433333333,-34.98545,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  13.396 km
+ReverseKP=  378.376 km
+Cable Distance=  13.513 km
+Reverse Cable Distance=  382.896 km
+WD= 21 m
+AC=-04.8� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  13.396 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  13.513 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 21 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-04.8� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.374183333333,-35.00305,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  49.524 km
+ReverseKP=  342.248 km
+Cable Distance=  49.821 km
+Reverse Cable Distance=  346.588 km
+WD= 38 m
+AC=14.3� Stbd
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  49.524 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  49.821 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 38 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>14.3� Stbd</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.112616666667,-35.2477166666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  62.006 km
+ReverseKP=  329.766 km
+Cable Distance=  62.366 km
+Reverse Cable Distance=  334.043 km
+WD= 33 m
+AC=13.2� Stbd
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  62.006 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  62.366 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 33 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>13.2� Stbd</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>137.999483333333,-35.3113666666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  80.083 km
+ReverseKP=  311.689 km
+Cable Distance=  80.533 km
+Reverse Cable Distance=  315.876 km
+WD= 32 m
+AC=03.6� Stbd
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  80.083 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  80.533 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 32 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>03.6� Stbd</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>137.8141,-35.3703,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  138.988 km
+ReverseKP=  252.784 km
+Cable Distance=  139.733 km
+Reverse Cable Distance=  256.676 km
+WD= 34 m
+AC=17.2� Stbd
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  138.988 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  139.733 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 34 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>17.2� Stbd</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>137.19565,-35.5308866666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  177.873 km
+ReverseKP=  213.899 km
+Cable Distance=  178.812 km
+Reverse Cable Distance=  217.597 km
+WD= 71 m
+AC=-11.2� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  177.873 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  178.812 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 71 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-11.2� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.766908333333,-35.5332416666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  236.798 km
+ReverseKP=  154.974 km
+Cable Distance=  238.032 km
+Reverse Cable Distance=  158.377 km
+WD= 115 m
+AC=-17.2� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  236.798 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  238.032 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 115 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-17.2� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.130051666667,-35.64012,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  244.053 km
+ReverseKP=  147.719 km
+Cable Distance=  245.323 km
+Reverse Cable Distance=  151.086 km
+WD= 115 m
+AC=-21.3� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  244.053 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  245.323 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 115 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-21.3� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.059818333333,-35.67159,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  267.975 km
+ReverseKP=  123.797 km
+Cable Distance=  269.365 km
+Reverse Cable Distance=  127.044 km
+WD= 143 m
+AC=-09.5� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  267.975 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  269.365 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 143 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-09.5� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.89,-35.8368833333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  324.025 km
+ReverseKP=  67.747 km
+Cable Distance=  326.060 km
+Reverse Cable Distance=  70.349 km
+WD=2 429 m
+AC=13.0� Stbd
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  324.025 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  326.060 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>2 429 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>13.0� Stbd</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.5746,-36.2722833333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  339.844 km
+ReverseKP=  51.928 km
+Cable Distance=  342.384 km
+Reverse Cable Distance=  54.025 km
+WD=3 385 m
+AC=-04.8� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  339.844 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  342.384 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>3 385 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-04.8� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.453466666667,-36.3758,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>AC</name>
+					<snippet></snippet>
+					<description>KP=  364.939 km
+ReverseKP=  26.833 km
+Cable Distance=  368.266 km
+Reverse Cable Distance=  28.143 km
+WD=4 700 m
+AC=-12.3� Port
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  364.939 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  368.266 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>4 700 m</value>
+						</Data>
+						<Data name="AC=">
+							<value>-12.3� Port</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.278516666667,-36.55235,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Burial</name>
+				<Placemark>
+					<name>PLUP; WD 15m</name>
+					<snippet></snippet>
+					<description>KP=  5.225 km
+ReverseKP=  386.547 km
+Cable Distance=  5.301 km
+Reverse Cable Distance=  391.108 km
+WD= 15 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  5.225 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  5.301 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 15 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.451651666667,-34.970065,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>PLDN; WD 1000m</name>
+					<snippet></snippet>
+					<description>KP=  309.638 km
+ReverseKP=  82.134 km
+Cable Distance=  311.282 km
+Reverse Cable Distance=  85.127 km
+WD=1 379 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  309.638 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  311.282 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>1 379 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.655721666667,-36.1605283333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Crossings</name>
+				<Placemark>
+					<name>CX OOS TELE Perth (Cottesloe)-Adelaide XA = 19</name>
+					<snippet></snippet>
+					<description>KP=  146.262 km
+ReverseKP=  245.510 km
+Cable Distance=  147.043 km
+Reverse Cable Distance=  249.366 km
+WD= 40 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  146.262 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  147.043 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 40 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>137.11545,-35.5313266666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>CX OOS TELE Perth (Cottesloe)-Adelaide XA = 42</name>
+					<snippet></snippet>
+					<description>KP=  252.368 km
+ReverseKP=  139.404 km
+Cable Distance=  253.680 km
+Reverse Cable Distance=  142.729 km
+WD= 120 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  252.368 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  253.680 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 120 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.000833333333,-35.7290433333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Maritime Boundaries</name>
+				<Placemark>
+					<name>MB TW AUS / CZ AUS / </name>
+					<snippet></snippet>
+					<description>KP=  247.741 km
+ReverseKP=  144.031 km
+Cable Distance=  249.030 km
+Reverse Cable Distance=  147.379 km
+WD= 120 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  247.741 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  249.030 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 120 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.03366,-35.6970733333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>MB CZ AUS / EZ AUS</name>
+					<snippet></snippet>
+					<description>KP=  270.551 km
+ReverseKP=  121.221 km
+Cable Distance=  271.954 km
+Reverse Cable Distance=  124.455 km
+WD= 150 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  270.551 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  271.954 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 150 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.875541666667,-35.8568966666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Other points</name>
+				<Placemark>
+					<name>HDD EXIT</name>
+					<snippet></snippet>
+					<description>KP=  1.057 km
+ReverseKP=  390.715 km
+Cable Distance=  1.112 km
+Reverse Cable Distance=  395.297 km
+WD= 6 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  1.057 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  1.112 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 6 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.496096666667,-34.9615183333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 18</name>
+					<snippet></snippet>
+					<description>KP=  65.004 km
+ReverseKP=  326.768 km
+Cable Distance=  65.380 km
+Reverse Cable Distance=  331.029 km
+WD= 33 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  65.004 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  65.380 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 33 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>137.968741666667,-35.3211416666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>MPA ENTER Southerm Spencer Gulf</name>
+					<snippet></snippet>
+					<description>KP=  139.464 km
+ReverseKP=  252.308 km
+Cable Distance=  140.211 km
+Reverse Cable Distance=  256.198 km
+WD= 35 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  139.464 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  140.211 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 35 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>137.190398333333,-35.5309166666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 17</name>
+					<snippet></snippet>
+					<description>KP=  169.726 km
+ReverseKP=  222.046 km
+Cable Distance=  170.624 km
+Reverse Cable Distance=  225.785 km
+WD= 59 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  169.726 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  170.624 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 59 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.856738333333,-35.5327483333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>MPA EXIT Southerm Spencer Gulf</name>
+					<snippet></snippet>
+					<description>KP=  176.565 km
+ReverseKP=  215.207 km
+Cable Distance=  177.498 km
+Reverse Cable Distance=  218.911 km
+WD= 69 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  176.565 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  177.498 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 69 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.781326666667,-35.5331616666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 16</name>
+					<snippet></snippet>
+					<description>KP=  179.364 km
+ReverseKP=  212.408 km
+Cable Distance=  180.311 km
+Reverse Cable Distance=  216.098 km
+WD= 72 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  179.364 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  180.311 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 72 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.750796666667,-35.5359466666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 15</name>
+					<snippet></snippet>
+					<description>KP=  247.960 km
+ReverseKP=  143.812 km
+Cable Distance=  249.249 km
+Reverse Cable Distance=  147.160 km
+WD= 120 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  247.960 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  249.249 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 120 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>136.03211,-35.6985833333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>CB EPP 42 ENTER</name>
+					<snippet></snippet>
+					<description>KP=  264.025 km
+ReverseKP=  127.747 km
+Cable Distance=  265.395 km
+Reverse Cable Distance=  131.014 km
+WD= 138 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  264.025 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  265.395 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 138 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.918066666667,-35.8095883333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 14</name>
+					<snippet></snippet>
+					<description>KP=  280.856 km
+ReverseKP=  110.916 km
+Cable Distance=  282.310 km
+Reverse Cable Distance=  114.099 km
+WD= 152 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  280.856 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  282.310 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 152 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.817671666667,-35.9369466666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 13</name>
+					<snippet></snippet>
+					<description>KP=  285.778 km
+ReverseKP=  105.994 km
+Cable Distance=  287.257 km
+Reverse Cable Distance=  109.152 km
+WD= 158 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  285.778 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  287.257 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 158 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.790005,-35.975185,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 12</name>
+					<snippet></snippet>
+					<description>KP=  289.496 km
+ReverseKP=  102.276 km
+Cable Distance=  290.993 km
+Reverse Cable Distance=  105.416 km
+WD= 181 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  289.496 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  290.993 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 181 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.769105,-36.0040633333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 11</name>
+					<snippet></snippet>
+					<description>KP=  291.905 km
+ReverseKP=  99.867 km
+Cable Distance=  293.416 km
+Reverse Cable Distance=  102.993 km
+WD= 276 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  291.905 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  293.416 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 276 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.755556666667,-36.022775,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 10</name>
+					<snippet></snippet>
+					<description>KP=  293.810 km
+ReverseKP=  97.962 km
+Cable Distance=  295.334 km
+Reverse Cable Distance=  101.075 km
+WD= 371 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  293.810 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  295.334 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 371 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.744835,-36.03758,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 9</name>
+					<snippet></snippet>
+					<description>KP=  295.435 km
+ReverseKP=  96.337 km
+Cable Distance=  296.968 km
+Reverse Cable Distance=  99.441 km
+WD= 421 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  295.435 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  296.968 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 421 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.735693333333,-36.0502016666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 8</name>
+					<snippet></snippet>
+					<description>KP=  297.045 km
+ReverseKP=  94.727 km
+Cable Distance=  298.586 km
+Reverse Cable Distance=  97.823 km
+WD= 466 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  297.045 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  298.586 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 466 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.726636666667,-36.062705,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 7</name>
+					<snippet></snippet>
+					<description>KP=  298.558 km
+ReverseKP=  93.214 km
+Cable Distance=  300.114 km
+Reverse Cable Distance=  96.295 km
+WD= 611 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  298.558 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  300.114 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 611 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.718121666667,-36.0744583333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 6</name>
+					<snippet></snippet>
+					<description>KP=  300.129 km
+ReverseKP=  91.643 km
+Cable Distance=  301.697 km
+Reverse Cable Distance=  94.712 km
+WD= 714 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  300.129 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  301.697 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 714 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.709276666667,-36.086665,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 5</name>
+					<snippet></snippet>
+					<description>KP=  301.881 km
+ReverseKP=  89.891 km
+Cable Distance=  303.460 km
+Reverse Cable Distance=  92.949 km
+WD= 809 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  301.881 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  303.460 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 809 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.699413333333,-36.1002716666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 4</name>
+					<snippet></snippet>
+					<description>KP=  304.291 km
+ReverseKP=  87.481 km
+Cable Distance=  305.886 km
+Reverse Cable Distance=  90.523 km
+WD= 928 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  304.291 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  305.886 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 928 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.685841666667,-36.1189933333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>CB EPP 42 EXIT</name>
+					<snippet></snippet>
+					<description>KP=  307.446 km
+ReverseKP=  84.326 km
+Cable Distance=  309.061 km
+Reverse Cable Distance=  87.348 km
+WD=1 108 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  307.446 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  309.061 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>1 108 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.668075,-36.1434983333333,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 3</name>
+					<snippet></snippet>
+					<description>KP=  308.258 km
+ReverseKP=  83.514 km
+Cable Distance=  309.881 km
+Reverse Cable Distance=  86.528 km
+WD=1 183 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  308.258 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  309.881 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>1 183 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.663495,-36.1498116666667,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>WD 1500m</name>
+					<snippet></snippet>
+					<description>KP=  311.422 km
+ReverseKP=  80.350 km
+Cable Distance=  313.080 km
+Reverse Cable Distance=  83.329 km
+WD=1 500 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  311.422 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  313.080 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>1 500 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.64567,-36.174385,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>ST 2</name>
+					<snippet></snippet>
+					<description>KP=  321.822 km
+ReverseKP=  69.950 km
+Cable Distance=  323.771 km
+Reverse Cable Distance=  72.638 km
+WD=2 160 m
+</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  321.822 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  323.771 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>2 160 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.58703,-36.25517,0</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Cable Assembly</name>
+			<Folder>
+				<name>Start/End</name>
+				<Placemark>
+					<name>BU GDI</name>
+					<snippet></snippet>
+					<description>KP=  0.000 km
+ReverseKP=  391.772 km
+Cable Distance=  0.000 km
+Reverse Cable Distance=  396.409 km
+WD= 5 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 5 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.507366666667,-34.95935,5</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>BU ADL</name>
+					<snippet></snippet>
+					<description>KP=  391.772 km
+ReverseKP=  0.000 km
+Cable Distance=  396.409 km
+Reverse Cable Distance=  0.000 km
+WD=5 210 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  391.772 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  396.409 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>5 210 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.145233333333,-36.769,5210</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Transition</name>
+				<Placemark>
+					<name>TR SAL-17/MDA-17</name>
+					<snippet></snippet>
+					<description>KP=  1.034 km
+ReverseKP=  390.738 km
+Cable Distance=  1.089 km
+Reverse Cable Distance=  395.320 km
+WD= 6 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  1.034 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  1.089 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 6 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.496338333333,-34.9614716666667,6.03756720605164</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>TR MDA-17/SAL-17</name>
+					<snippet></snippet>
+					<description>KP=  8.644 km
+ReverseKP=  383.128 km
+Cable Distance=  8.737 km
+Reverse Cable Distance=  387.672 km
+WD= 17 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  8.644 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  8.737 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 17 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.415546666667,-34.9780416666667,17.4240596325551</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>TR SAL-17/LWP-17</name>
+					<snippet></snippet>
+					<description>KP=  313.232 km
+ReverseKP=  78.540 km
+Cable Distance=  314.903 km
+Reverse Cable Distance=  81.506 km
+WD=1 625 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  313.232 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  314.903 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>1 625 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.63547,-36.1884433333333,1625.31820951374</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>BU</name>
+				<Placemark>
+					<name>BU GDI</name>
+					<snippet></snippet>
+					<description>KP=  0.000 km
+ReverseKP=  391.772 km
+Cable Distance=  0.000 km
+Reverse Cable Distance=  396.409 km
+WD= 5 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 5 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.507366666667,-34.95935,5</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>BU ADL</name>
+					<snippet></snippet>
+					<description>KP=  391.772 km
+ReverseKP=  0.000 km
+Cable Distance=  396.409 km
+Reverse Cable Distance=  0.000 km
+WD=5 210 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  391.772 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  396.409 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>5 210 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.145233333333,-36.769,5210</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Other SLD point</name>
+				<Placemark>
+					<name>CABLE ALLOWANCE 50M</name>
+					<snippet></snippet>
+					<description>KP=  0.000 km
+ReverseKP=  391.772 km
+Cable Distance=  0.050 km
+Reverse Cable Distance=  396.359 km
+WD= 5 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  0.000 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  0.050 km</value>
+						</Data>
+						<Data name="WD=">
+							<value> 5 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>138.507366666667,-34.95935,5</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>SC 3.0%</name>
+					<snippet></snippet>
+					<description>KP=  313.234 km
+ReverseKP=  78.538 km
+Cable Distance=  314.906 km
+Reverse Cable Distance=  81.503 km
+WD=1 626 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  313.234 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  314.906 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>1 626 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.635455,-36.188465,1625.51753323825</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+				<Placemark>
+					<name>CABLE ALLOWANCE 500M</name>
+					<snippet></snippet>
+					<description>KP=  391.772 km
+ReverseKP=  0.000 km
+Cable Distance=  395.909 km
+Reverse Cable Distance=  0.500 km
+WD=5 210 m</description>
+					<styleUrl>#MyStylePoint</styleUrl>
+					<ExtendedData>
+						<Data name="KP=">
+							<value>  391.772 km</value>
+						</Data>
+						<Data name="Cable Distance=">
+							<value>  395.909 km</value>
+						</Data>
+						<Data name="WD=">
+							<value>5 210 m</value>
+						</Data>
+					</ExtendedData>
+					<gx:balloonVisibility>0</gx:balloonVisibility>
+					<Point>
+						<coordinates>135.145233333333,-36.769,5210</coordinates>
+					</Point>
+					<visibility>0</visibility>
+				</Placemark>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Lines</name>
+			<Folder>
+				<name>SAL-17</name>
+				<Placemark>
+					<name>Route1</name>
+					<styleUrl>#MyStyleSA</styleUrl>
+					<LineString>
+						<extrude>1</extrude>
+						<coordinates>
+138.507366666667,-34.95935,5
+138.496338333333,-34.9614716666667,6.03756720605164
+</coordinates>
+						<altitudeMode>clampToSealevel</altitudeMode>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>Route3</name>
+					<styleUrl>#MyStyleSA</styleUrl>
+					<LineString>
+						<extrude>1</extrude>
+						<coordinates>
+138.415546666667,-34.9780416666667,17.4240596325551
+138.40745,-34.98045,17.975591383928
+138.396433333333,-34.98545,18.7815447983889
+138.374183333333,-35.00305,20.5229070002147
+138.112616666667,-35.2477166666667,38
+137.999483333333,-35.3113666666667,33
+137.968741666667,-35.3211416666667,32.8565208998585
+137.8141,-35.3703,32.1350300062865
+137.19565,-35.5308866666667,34.422420358509
+137.190398333333,-35.5309166666667,34.6401279492588
+137.11545,-35.5313266666667,40
+136.856738333333,-35.5327483333333,59.2155952332871
+136.781326666667,-35.5331616666667,69.1091435912056
+136.766908333333,-35.5332416666667,70.6042816577159
+136.750796666667,-35.5359466666667,72.3913830633801
+136.130051666667,-35.64012,115
+136.059818333333,-35.67159,115
+136.03366,-35.6970733333333,120
+136.03211,-35.6985833333333,120
+136.000833333333,-35.7290433333333,120
+135.918066666667,-35.8095883333333,137.990312709303
+135.89,-35.8368833333333,142.588070777387
+135.875541666667,-35.8568966666667,150
+135.817671666667,-35.9369466666667,151.789401706181
+135.790005,-35.975185,158.120879011618
+135.769105,-36.0040633333333,180.82341801622
+135.755556666667,-36.022775,275.953288207696
+135.744835,-36.03758,371.400735569027
+135.735693333333,-36.0502016666667,420.935387090001
+135.726636666667,-36.062705,466.412647584821
+135.718121666667,-36.0744583333333,610.724121673013
+135.709276666667,-36.086665,713.531189357537
+135.699413333333,-36.1002716666667,809.31163960236
+135.685841666667,-36.1189933333333,927.563258710828
+135.668075,-36.1434983333333,1108.04564247521
+135.663495,-36.1498116666667,1182.78019611105
+135.655721666667,-36.1605283333333,1378.82494808671
+135.64567,-36.174385,1500.02966537819
+135.63547,-36.1884433333333,1625.31820951374
+</coordinates>
+						<altitudeMode>clampToSealevel</altitudeMode>
+					</LineString>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>MDA-17</name>
+				<Placemark>
+					<name>Route2</name>
+					<styleUrl>#MyStyleDA</styleUrl>
+					<LineString>
+						<extrude>1</extrude>
+						<coordinates>
+138.496338333333,-34.9614716666667,6.03756720605164
+138.496096666667,-34.9615183333333,6.0920608103826
+138.451651666667,-34.970065,15.0256200498758
+138.425383333333,-34.9751166666667,16.7539631189572
+138.415546666667,-34.9780416666667,17.4240596325551
+</coordinates>
+						<altitudeMode>clampToSealevel</altitudeMode>
+					</LineString>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>LWP-17</name>
+				<Placemark>
+					<name>Route4</name>
+					<styleUrl>#MyStyleLWP</styleUrl>
+					<LineString>
+						<extrude>1</extrude>
+						<coordinates>
+135.63547,-36.1884433333333,1625.31820951374
+135.58703,-36.25517,2160.23252592023
+135.5746,-36.2722833333333,2428.67894559922
+135.453466666667,-36.3758,3385
+135.278516666667,-36.55235,4700
+135.145233333333,-36.769,5210
+</coordinates>
+						<altitudeMode>clampToSealevel</altitudeMode>
+					</LineString>
+				</Placemark>
+			</Folder>
+		</Folder>
+	</Folder>
+</kml>

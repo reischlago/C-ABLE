@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-100 Mapper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!--Leaflet documentation: https://leafletjs.com/examples/quick-start/-->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+    <!--Turf documentation: https://turfjs.org/docs/getting-started-->
+    <script>
+        //Hide hints
+        document.addEventListener("DOMContentLoaded", function () {
+            const hintsOverlay = document.getElementById("hints-overlay");
+            const closeHintButton = document.querySelector(".hint-close");
+            const hintOpen = document.getElementById("hintOpen");
+
+            // Check localStorage for the overlay state
+            if (localStorage.getItem("hintsOverlayHidden") === "true") {
+                hintsOverlay.style.display = "none";
+            }
+            if (localStorage.getItem("hintsOverlayHidden") === "false") {
+                hintOpen.style.display = "none";
+            }
+    
+            // Set up click event listener on the close button
+            hintsOverlay.addEventListener("click", function () {
+                hintsOverlay.style.display = "none";
+                hintOpen.style.display = "block";
+                localStorage.setItem("hintsOverlayHidden", "true");
+            });
+            closeHintButton.addEventListener("click", function () {
+                hintsOverlay.style.display = "none";
+                hintOpen.style.display = "block";
+                localStorage.setItem("hintsOverlayHidden", "true");
+            });
+            hintOpen.addEventListener("click", function () {
+                hintsOverlay.style.display = "flex";
+                hintOpen.style.display = "none";
+                localStorage.setItem("hintsOverlayHidden", "false");
+            });
+        });
+    </script>
+</head>
+<body class="vizualizer-body">
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/converter">Converter</a></li>
+                <li><a href="/vizualizer" class="active">Overview</a></li>
+                <li><a href="/export">Manage cables</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Loading overlay -->
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+    <div id="hints-overlay">
+        <div class="hint">
+            <div class="hint-close" onclick="document.getElementById('hints-overlay').style.display = 'none';">X</div>
+            <div class="hint-closeInfo"><i>Click the X or anywhere on the screen to close hints.</i></div>
+            <div class="hint-zonecross hint-element">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+                <div class="text">Toggle crossed zones on the map using this button.</div>
+            </div>
+            <div class="hint-cablecross hint-element">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+                <div class="text">Show or hide crossed cable info on the right side.</div>
+            </div>
+            <div class="hint-eezs hint-element">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+                <div class="text">Show or hide Exclusive Economic Zones on the map.</div>
+            </div>
+            <div class="hint-routes hint-element">
+                <div class="text">Show or hide all routes and highlighted zones.</div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+            </div>
+            <div class="hint-cableName hint-element">
+                <div class="text">Click a cable's name to view details and filter crossed items below.</div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+            </div>
+            <div class="hint-cableEye hint-element">
+                <div class="text">Click the eye icon next to a cable to hide or show its route.</div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+            </div>
+            <div class="hint-cableCrossings hint-element">
+                <div class="text">Clicking on cable crossing points zooms in on them on the map.</div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+            </div>
+            <div class="hint-zoneCrossings hint-element">
+                <div class="text">Clicking on zone crossing points zooms in on them on the map.</div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAlyAAAJcgErz99GAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAqVJREFUeJzt2k1oXFUYxvFfbNqSopvU1tBCi+iiISASCi3aiFaKXbgpulC7VEQUtN0UsijddNkUdCG6cSOC1IUgpQWh0EJXNdnVL9RFi1TEGA01JJiauHgn5GOappnMvScz9/xhFnPvuXee5z3v+bjvHTKZTCaTyWQy1aQjtYAGeQjPYAC9GMcnuLzaG7VKAB7EfhzAs3gKG5e0mUQ3pkpVVhBdOIyzGMY0Zu/js2O1P7SeMmAD3sULIr27lmk3jWsi3b/FDZxDT+2a6aKFFsV29T36H77HpzgmhsAenMQveB0f1Np+VL7k5vIAPsdpvIZ+bFlw/iDOi6DMBWgYM/huSdu2YQNexYjlx/0UnkwlsCg68JLo2aWGJ0Wm/FP7fjyRxsJ4Dt+oN/6nGB47cKF27KL1NZGviR58pt74r3hP7AVgqHb8Z2wtX2bz6cA7+Nti439h0OLJ7Ujt3Dj6ypVZDDvxtfpJbcjde/e0WAVeLEtgkbwsxvVC819g9z2uOYoTxUsrlk6xxV1o/JZI75XYVqCuUuhWn/LntMlkthKP4Sfzxm/iUFJFJdIrlrM585fwSFJFJbIXfwjjMzgl9v2V4Anz6/skXkkrp1weFbP7rAjCgbRyyuVh/CDMj2FfWjnlsglXhflRMQwqxcfC/ASeTqyldN4Q5v9VoTV+jsdxWwTgrcRaSmeTqM/N4sPEWpIwKMyPiGBUil2iPjchStaV40vR+2+nFpKCfrG/v6KNipOr4StRwupNLSQFfeaf7irJGfwu3tVXjk78hjdTC0nF8/hRBKKlabQyM4D3caeJWlqK89pk7DeaAaPiwaflaSQAm3G92UJS0UgAtotyV1vQSAC2aKPJr5EAjGmjR95GA9AWf0ZcCy3/ljaTyWQymUwmU3X+B6Q9qrOoBMVuAAAAAElFTkSuQmCC" alt="Arrow">
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <main class="vizualizer">
+        <section id="info">
+            <h1>Cable visualizer <div id="hintOpen"></div></h1>
+            <div id="map-cont">
+                <div id="map"></div>
+                <div id="hideZoneCross" class="active" title="Hide/Show Detected Zone Crossing details" onclick="hideZoneCross()">Hide Zone Crossings</div>
+                <div id="hideCableCross" class="active" title="Hide/Show Detected Cable Crossing details" onclick="hideCableCross()">Hide Cable Crossings</div>
+                <div id="toggleZones" class="" title="Hide/Show Exclusive Economic Zones" onclick="toggleZones()">Show/Hide Exclusive Economic Zones</div>
+                <div id="controls">
+                    <div class="route-cont" id="route-cont">
+                        <div class="title">
+                            Saved routes (<span id="routeCounter">0</span>):
+                            <div id="toggleCablesVisibility" class="hidden" title="Hide/Show All Cables and Highlighted Zones" onclick="toggleAllRoutesVisibility()">Show/Hide Cables</div>
+                        </div>
+                        <div id="route-cont-inner"></div>
+                    </div>
+                    <div id="details-cont">
+                        <div id="route-name"></div>
+                        <div id="route-coordinates"></div>
+                    </div>
+                    <div id="links-container"></div>
+                    <div id="crossings" class="active">
+                        <div class="title">Detected cable crossings (<span id="cableCrossCounter">0</span>):</div>
+                        <div id="crossings-inner"></div>
+                    </div>
+                    <div id="EEZcrossings" class="active">
+                        <div class="title">Detected zone crossings (<span id="zoneCrossCounter">0</span>):</div>
+                        <div id="EEZcrossings-inner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Include Leaflet JS. Use https://www.srihash.org/ for integrity generation. -->
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M" crossorigin="anonymous"></script>
+            <script src="/visualizer_script.js"></script>
+        </section>
+    </main>
+    <script>
+        // Wait until the entire page is loaded
+        window.addEventListener('load', function () {
+            // Hide the loading overlay
+            const overlay = document.getElementById('loading-overlay');
+            overlay.style.display = 'none';
+
+            // Call the function to sort and reorder the routes
+            sortRoutesById();
+            shortenRouteCont();
+            shortenZoneCrossingCont();
+            shortenCableCrossingCont();
+        });
+        // Function to sort and reorder the routes alphabetically by their IDs
+        function sortRoutesById() {
+            // Select the route container
+            const routeContainer = document.getElementById("route-cont-inner");
+
+            // Get all routes and convert the NodeList to an array
+            const routes = Array.from(routeContainer.querySelectorAll(".routes"));
+
+            // Sort the routes by their IDs
+            routes.sort((a, b) => a.id.localeCompare(b.id));
+
+            // Reorder the routes in the container
+            routes.forEach(route => {
+                routeContainer.appendChild(route); // Append each route in the sorted order
+            });
+        }
+    </script>
+</body>
+</html>

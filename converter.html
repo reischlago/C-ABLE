@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-100 Mapper</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/converter.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body class="converter-body">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/converter" class="active">Converter</a></li>
+                <li><a href="/vizualizer">Overview</a></li>
+                <li><a href="/export">Manage cables</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="info">
+            <h1>Beep boop</h1>
+        </section>
+
+        <section id="converter-interface">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" accept=".kml,.xlsx" required>
+                <input type="submit" value="Upload">
+            </form>
+        </section>
+
+        {% if file_names %}
+        <section id="processed-files">
+            Processed Files:
+            <div>
+                <select onchange="fetchFileData(this.value, event)">
+                    <option value="" disabled selected>Select a file</option>
+                    {% for file_name in file_names %}
+                        <option value="{{ file_name }}">{{ file_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <section id="file-data-output">
+            </section>
+        </section>
+        {% endif %}
+
+        <section id="nav-buttons">
+            <button onclick="window.location.href = '/converter'">Upload new file</button>
+            <button onclick="window.location.href = '/vizualizer'">See all cables</button>
+        </section>
+    </main>
+</body>
+</html>

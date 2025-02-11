@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>test_cables_edited.kml</name>
+	<open>1</open>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	<Style id="style.1">
+		<LineStyle>
+			<color>ff00274e</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="style.11">
+		<LineStyle>
+			<color>ff004eea</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="style.16">
+		<LineStyle>
+			<color>ff0075c3</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="style.3">
+		<LineStyle>
+			<color>ff00279c</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="style.6">
+		<LineStyle>
+			<color>ff004e27</color>
+			<width>7</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Cables</name>
+		<open>1</open>
+		<Folder>
+			<name>SEACOM</name>
+			<Style id="style.1">
+				<LineStyle>
+					<color>ff00274e</color>
+					<width>3</width>
+				</LineStyle>
+			</Style>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						31.76831667,-28.96246667,0 33.7172313065,-28.3131954494,0 35.6096266947,-27.3821794244,0 37.0320378715,-26.4079752664,0 38.3393560794,-25.1598732819,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						32.5949342847,-25.9746178293,0 33.7288720226,-25.5017124284,0 35.0971906782,-25.2096148686,0 38.3393560794,-25.1598732819,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						38.3393560794,-25.1598732819,0 38.3424532529,-25.1602336873,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						38.3393560794,-25.1598732819,0 40.0265418018,-22.7333398777,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						40.0265418018,-22.7333398777,0 40.0249466607,-22.7330462105,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						40.0265418018,-22.7333398777,0 41.4954799601,-19.3343873546,0 42.4103459727,-15.6728486212,0 42.4744872468,-12.9761016776,0 41.980382993,-8.997180974899999,0 41.9813913591,-6.8475189766,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						41.9813913591,-6.8475189766,0 42.3325457795,-4.2577477424,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						39.2967243354,-6.8016176236,0 41.9813913591,-6.8475189766,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						42.3325457795,-4.2577477424,0 42.3338601518,-4.257846215,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						42.3325457795,-4.2577477424,0 42.8954342835,-2.9644187071,0 43.8835943839,-1.7124598072,0 48.37070329580001,1.9624483832,0 49.8350285928,3.4941335584,0 54.2677627716,9.0080554019,0 57.4208270655,14.1348465309,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						42.3325457795,-4.2577477424,0 39.689281069,-4.0597146717,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						43.1620512263,11.5732464678,0 43.8905247424,11.7764107107,0 55.8830012895,13.6410823716,0 57.4208270655,14.1348465309,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						44.3737575402,11.8584691103,0 43.2148615461,12.8469980819,0 43.1290508608,13.6304837182,0 42.9017200845,14.0957993289,0 39.9767364456,17.4975716801,0 38.9751295032,19.0283007279,0 38.6814378627,20.2848239332,0 39.1410761639,21.5314985459,0 37.870078065,22.0573739219,0 34.1556227162,27.5734410609,0 33.0760779677,28.6278515505,0 32.6579715849,29.1162335899,0 32.0530489515,29.27776664789999,0 30.00790221700001,30.7530324716,0 29.6881166667,31.0675111111,0 28.8629353242,33.0420144726,0 27.4562476973,33.6781486612,0 25.1873519081,34.1291525393,0 19.642477806,34.6587225387,0 17.2330708281,35.0697093656,0 15.2693940209,35.7159528324,0 11.8182242159,37.4478830083,0 9.151515074700001,37.9212849571,0 8.278594335499999,38.267418721,0 7.693098582400001,38.769074198,0 7.166362805599999,39.5061590058,0 5.3746910853,43.2853628432,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						57.4208270655,14.1348465309,0 61.0453854852,15.2986175306,0 72.8243698047,19.0806066088,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						28.045556,-26.204444,0 31.76831667,-28.96246667,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SEACOM</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SEACOM'>http://www.cablemap.info/?c=SEACOM</a>]]></description>
+				<styleUrl>#style.1</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						39.689281069,-4.0597146717,0 36.81,-1.28,0 32.567,0.3,0 30.05,-1.93333,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>SAFE</name>
+			<Style id="style.3">
+				<LineStyle>
+					<color>ff00279c</color>
+					<width>2</width>
+				</LineStyle>
+			</Style>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						18.443135,-33.70816,0 18.35213333,-33.72503333,0 18.33298333,-33.73323333,0 18.24055,-33.75126667,0 18.226,-33.7626,0 18.18275,-33.77556667,0 18.10391667,-33.76975,0 18.07098333,-33.7745,0 18.03485,-33.78683333,0 18.00531667,-33.7994,0 18,-33.80333333,0 17.99405,-33.81128333,0 17.99136667,-33.8187,0 17.99095,-33.829,0 17.98596667,-33.8426,0 17.98083333,-33.84953333,0 17.9636,-33.86298333,0 17.9329,-33.87668333,0 17.75531667,-33.88361667,0 17.7281,-33.91016667,0 17.70283333,-33.91508333,0 17.68303333,-33.92295,0 17.67116667,-33.92508333,0 17.6338,-33.92716667,0 17.4855,-33.96566667,0 17.4405,-33.98291667,0 17.40468333,-33.98825,0 17.4190641852,-34.2357155561,0 17.5570729235,-34.5355276428,0 17.9883537698,-34.996736781,0 18.9531614082,-35.4955907118,0 20.1112185028,-35.7874951384,0 22.6182001244,-35.8760190178,0 26.4515390561,-35.0139030097,0 30.21009520460001,-33.5194461553,0 35.0037453473,-31.069884116,0 40.5591333931,-29.0372637964,0 44.7487086963,-27.1161035311,0 48.40299235419999,-25.5603798853,0 52.0140157374,-23.860189709,0 52.4128749341,-22.6366412778,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						31.76831667,-28.96246667,0 31.76863333,-28.96343333,0 31.77135,-28.97356667,0 31.77643333,-28.986,0 31.78791667,-29,0 31.79651667,-29.01666667,0 31.79966667,-29.02703333,0 31.80051667,-29.06751667,0 31.80563333,-29.08333333,0 31.8222,-29.11666667,0 31.86551667,-29.24991667,0 31.86915,-29.27265,0 31.87796667,-29.29961667,0 31.89931667,-29.34198333000001,0 31.90975,-29.4,0 31.91338333,-29.4418,0 31.9173,-29.4663,0 31.92078333,-29.4806,0 31.92578333,-29.49561667,0 31.94216667,-29.5273,0 31.94891667,-29.53693333,0 31.97993333,-29.56966667,0 31.9954,-29.57963333,0 32.0085,-29.58646667,0 32.02451667,-29.59585,0 32.04028333,-29.60373333,0 32.05473333,-29.6127,0 32.0613,-29.61546667,0 32.07595,-29.62598333,0 32.08135,-29.62958333,0 33.2529523094,-31.9245457695,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						52.4128749341,-22.6366412778,0 53.0029812636,-22.6080877457,0 54.21650637649999,-22.4272487093,0 55.3205762832,-21.9656332741,0 56.5103067862,-21.4469107749,0 57.1527612577,-20.9234293536,0 57.3,-20.64033333,0 57.3122,-20.63685,0 57.31349999999999,-20.63648333,0 57.40313333,-20.61088333,0 57.42878333,-20.58383333,0 57.43058333,-20.58275,0 57.4372,-20.55646667,0 57.43883333,-20.55,0 57.44166667,-20.53166667,0 57.44293333,-20.5227,0 57.44278333,-20.52125,0 57.44808333,-20.51586667,0 57.44721667,-20.50981667,0 57.44713333,-20.50923333,0 57.44695,-20.50838333,0 57.44693333,-20.50793333,0 57.44693333,-20.50748333,0 57.44711667,-20.50655,0 57.44728333,-20.50543333,0 57.44751667,-20.50465,0 57.44746667,-20.50416667,0 57.44736667,-20.50368333,0 57.44683333,-20.50295,0 57.44669999999999,-20.50266667,0 57.44613333,-20.50111667,0 57.44608333,-20.50105,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						52.4128749341,-22.6366412778,0 53.28401931389999,-20.3824344301,0 54.5451336469,-20.2396667698,0 54.99896667,-20.36453333,0 55.027,-20.37616667,0 55.025,-20.38666667,0 55.02055,-20.3947,0 55.03716667,-20.47885,0 55.04766667,-20.547,0 55.05055000000001,-20.55518333,0 55.13961667,-20.7665,0 55.14343333000001,-20.77426667,0 55.15933333,-20.81233333,0 55.17036667,-20.82811667,0 55.18733333,-20.851,0 55.19086667,-20.85776667,0 55.2191,-20.90883333,0 55.23358333000001,-20.95066667,0 55.24163333,-20.95833333,0 55.25205,-20.98166667,0 55.2558,-20.98433333,0 55.26666667000001,-20.99193333,0 55.27176667,-20.99425,0 55.27753333,-20.99811667,0 55.27781666999999,-20.99826667,0 55.27808332999999,-20.99846667,0 55.27825,-20.99868333,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						55.27959999999999,-20.99563333,0 55.27945,-20.99545,0 55.27921667,-20.99525,0 55.27896667,-20.9951,0 55.26953333,-20.98813333,0 55.2573,-20.98,0 55.2554,-20.97875,0 55.25,-20.96666667,0 55.24421666999999,-20.92843333,0 55.23776667000001,-20.90416667,0 55.23996667,-20.89916667,0 55.23678332999999,-20.89636667,0 55.24133333,-20.89496667,0 55.25416667,-20.85,0 55.25541667,-20.84243333,0 55.25698333,-20.8328,0 55.26783333,-20.76666667,0 55.6111321776,-20.2967738339,0 55.6444446316,-20.1016580314,0 57.8969746659,-17.2098883116,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						57.44756667,-20.50116667,0 57.44755,-20.50123333,0 57.44685,-20.50188333,0 57.44703333,-20.5028,0 57.44746667,-20.50366667,0 57.44763333,-20.50463333,0 57.44765,-20.50518333,0 57.44781667,-20.50781667,0 57.44816667,-20.50938333,0 57.44958333,-20.5158,0 57.44958333,-20.51583333,0 57.44756667,-20.5197,0 57.4471,-20.53181667,0 57.44705,-20.53333333,0 57.44358333,-20.55485,0 57.43903333000001,-20.58306667,0 57.43815,-20.58851667,0 57.43333333000001,-20.61833333,0 57.42633333000001,-20.68735,0 57.4125,-20.82333333,0 57.40616667,-20.82615,0 57.40491667000001,-20.82668333,0 57.4287787344,-20.8853579775,0 57.4478144224,-20.9424650416,0 57.5763053168,-21.0233667158,0 57.7856978853,-21.0424024039,0 58.1426170361,-20.8948758215,0 58.5740415503,-20.5049471488,0 59.0555113347,-18.9853081417,0 57.8969746659,-17.2098883116,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						57.8969746659,-17.2098883116,0 66.7620927974,-14.1416329492,0 68.901958506,-12.8933779525,0 71.2558107854,-11.0031632433,0 73.0594094546,-8.324786654,0 74.0408794281,-6.0289965557,0 75.13834827150001,-2.3033849312,0 76.0938781385,-0.282034828,0 77.3257092149,1.2089762753,0 79.3271741028,2.7407432045,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						79.3271741028,2.7407432045,0 79.3322702926,2.7372844669,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						79.3271741028,2.7407432045,0 81.53363588089999,3.891116246,0 84.0602269738,4.8513368054,0 86.62234075249999,5.5663342509,0 89.1590133464,5.9928298071,0 92.824263753,6.3221141775,0 95.1937694068,6.3084444391,0 96.36270743650002,6.1657589144,0 97.28843333,6.04065,0 97.4135,6.0041,0 97.55140000000002,5.979633333,0 97.60020000000002,5.965766667,0 97.63404999999999,5.960416666999999,0 97.64828333,5.953533333,0 97.66930000000001,5.948383333000001,0 97.705,5.944466667000001,0 97.73083332999998,5.938016666999999,0 97.78694999999999,5.92555,0 97.81596666999998,5.920233333,0 97.82426667,5.91425,0 97.84103333000002,5.9168,0 97.84978332999998,5.914150000000001,0 97.86248333,5.903666667,0 97.87183333000002,5.901099999999999,0 97.88166667,5.902583333,0 97.90175000000001,5.898116666999999,0 97.91784999999999,5.894766667,0 97.93835000000001,5.887283332999999,0 97.98999999999998,5.882666667,0 98.01116666999998,5.875033333,0 98.06353333000001,5.870450000000001,0 98.08533333,5.865533332999999,0 98.10935000000001,5.862483332999999,0 98.14531667,5.85785,0 98.17026667,5.854083333000001,0 98.20223333,5.850183333,0 98.22573333,5.846933333,0 98.24718333,5.844133333,0 98.27098333000001,5.840816667,0 98.29266667000002,5.838183333,0 98.32774999999999,5.833349999999999,0 98.35658333000001,5.82985,0 98.37194999999998,5.829716667,0 98.39526667,5.82665,0 98.44114999999998,5.815366667000001,0 98.49060000000001,5.811200000000001,0 98.67035000000001,5.788066667000001,0 98.71635000000001,5.779066667,0 98.74394999999998,5.777950000000001,0 98.80828332999999,5.768149999999999,0 98.91540000000002,5.754816667,0 98.94543333000001,5.748116667,0 99.00623333000001,5.741933333,0 99.07813333,5.73195,0 99.09876666999999,5.724266666999999,0 99.12003333,5.726349999999999,0 99.19096666999999,5.7167,0 99.24743333000001,5.720233333,0 99.28988332999999,5.721000000000001,0 99.34751667,5.724616667,0 99.41305,5.732433333,0 99.48135000000001,5.73225,0 99.55214999999998,5.736716667,0 99.59098333,5.7379,0 99.64588333,5.742383333000001,0 99.67915000000001,5.740916667,0 99.72086667000002,5.746216667,0 99.74800000000002,5.747450000000001,0 99.77468333,5.746333333000001,0 99.84666667,5.72555,0 99.93741667000002,5.696183333,0 100.0081333,5.673816667000001,0 100.0880333,5.651483333,0 100.1066333,5.645816667,0 100.1568667,5.62435,0 100.1654667,5.620666667,0 100.1691667,5.619166667,0 100.2343167,5.59955,0 100.2383333,5.598333333,0 100.2685333,5.592933333,0 100.2919,5.576683333,0 100.3247,5.556866667,0 100.3459,5.560933333,0 100.3529,5.561716667,0 100.3581333,5.56165,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>SAFE</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=SAFE'>http://www.cablemap.info/?c=SAFE</a>]]></description>
+				<styleUrl>#style.3</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						76.17866667,10.1405,0 76.17865,10.1405,0 76.17831667,10.14038333,0 76.17606667,10.13966667,0 76.15606667,10.13331667,0 76.14165,10.13093333,0 76.125,10.12605,0 76,10.09666667,0 75.94518333000001,10.08441667,0 75.9422,10.08375,0 75.89295,10.07278333,0 75.85554999999999,10.06618333,0 75.81655000000001,10.05511667,0 75.79349999999999,10.04766667,0 75.76665,10.04141667,0 75.73418332999999,10.04193333,0 75.68663333000001,10.03315,0 75.68178333,10.03228333,0 75.66251667,10.03198333,0 75.65635,10.032,0 75.65476667,10.03193333,0 75.6546,10.03191667,0 75.64834999999999,10.03196667,0 75.61,10.0421,0 75.59961667,10.04245,0 75.55843333,10.04386667,0 75.52301667,10.05311667,0 75.2084963029,10.0001557243,0 74.5492937595,8.931719054,0 74.8491058462,7.5468727486,0 75.3036040491,6.7632872337,0 75.84484876579999,5.8318534416,0 76.6975263855,4.8486600153,0 79.3271741028,2.7407432045,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>WACS</name>
+			<Style id="style.6">
+				<LineStyle>
+					<color>ff004e27</color>
+					<width>7</width>
+				</LineStyle>
+			</Style>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						9.4248105306,-24.3468205305,0 9.9972720143,-26.2743040444,0 10.6063679381,-27.7339005046,0 11.309437071,-28.9083483835,0 13.6992350793,-31.4624516961,0 16.2679190543,-33.5443788667,0 17.5393891959,-33.4683521415,0 18.161,-33.3399633333,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						14.5236666667,-22.674,0 9.4248105306,-24.3468205305,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						6.9077557628,-11.2104588885,0 7.0205241954,-12.5052934298,0 7.167726913400001,-15.667787579,0 8.304518983099999,-20.5747877391,0 9.4248105306,-24.3468205305,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						13.1975,-9.564,0 6.9077557628,-11.2104588885,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						6.543785832499999,-7.0312677177,0 6.9077557628,-11.2104588885,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						12.353,-5.9490583333,0 6.543785832499999,-7.0312677177,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						6.3564346771,-5.2769796259,0 6.543785832499999,-7.0312677177,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						11.8253516667,-4.63,0 6.3564346771,-5.2769796259,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						4.5077638392,1.214621355,0 5.2458218118,-0.1851437653,0 5.958429509400001,-2.3229668583,0 6.2638328084,-4.4098894014,0 6.3564346771,-5.2769796259,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-4.6470925662,1.3385897622,0 -1.0968676326,1.5596780957,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-1.0968676326,1.5596780957,0 0.808902695,1.67835891,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						0.808902695,1.67835891,0 2.7205886437,1.7974081163,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						2.7205886437,1.7974081163,0 3.5342960003,1.8480813009,0 4.5077638392,1.214621355,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						9.093999999999999,4.03,0 4.5077638392,1.214621355,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-3.9522777778,5.248,0 -4.6470925662,1.3385897622,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-0.204416667,5.541716667,0 -1.0968676326,1.5596780957,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						1.3913083333,6.181,0 0.808902695,1.67835891,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						3.6402166667,6.426,0 3.660231094999999,2.966430672,0 2.7205886437,1.7974081163,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-23.5176666667,14.904,0 -25.1821053912,13.320287226,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-25.7542493568,15.721925273,0 -25.6796150524,14.946994017,0 -25.1821053912,13.320287226,0 -24.3465549977,11.4824333478,0 -22.8977729919,8.918406706600001,0 -21.5203994698,6.8605832893,0 -20.3261237591,5.4003956593,0 -19.1146895008,4.2208890357,0 -17.9119845664,3.3349502983,0 -16.5386713869,2.6147862482,0 -13.8481721287,1.7159158544,0 -10.7545345723,1.1839503937,0 -5.3984055755,1.2918021517,0 -4.6470925662,1.3385897622,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-15.3788366667,27.983,0 -15.3183498875,27.578980451,0 -16.2284937222,27.2220613002,0 -23.1497090086,28.3893887531,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-23.1497090086,28.3893887531,0 -23.5257873061,27.4570124614,0 -24.7040643017,23.6951175995,0 -25.6109520453,19.3235144247,0 -25.8674954196,16.8977641095,0 -25.7542493568,15.721925273,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-9.1952483333,38.572,0 -18.2268967635,38.4312155056,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>WACS</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=WACS'>http://www.cablemap.info/?c=WACS</a>]]></description>
+				<styleUrl>#style.6</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-3.0151166667,51.28145000000001,0 -3.683534359799999,51.30547079270001,0 -5.078861575,51.2570219311,0 -6.256168912899999,50.62718672980001,0 -9.4715414885,48.5336260621,0 -11.1126404898,47.4432015008,0 -12.6280339046,46.114409318,0 -14.1473138903,44.437457637,0 -15.7091665552,42.3627787677,0 -18.6250935024,37.8157811641,0 -20.1994580552,35.0375054097,0 -21.8874689303,31.5187443458,0 -23.1497090086,28.3893887531,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>CANTAT-3</name>
+			<Style id="style.11">
+				<LineStyle>
+					<color>ff004eea</color>
+					<width>2</width>
+				</LineStyle>
+			</Style>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						4.882617,55.64,0 4.56425,55.80400000000001,0 4.3754623989,55.9429671326,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						4.3754623989,55.9429671326,0 4.228412,56.078,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						4.3754623989,55.9429671326,0 5.2303930849,57.0265631576,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						6.1906148943,56.249924272,0 8.307499999999999,54.91,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						5.2303930849,57.0265631576,0 6.180552241200001,56.2700495781,0 8.1818166667,55.7680666667,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-7.1947121795,62.306166794,0 -10.8261240696,64.2745040896,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-20.2257391298,63.4126249682,0 -18.994022573,61.4798916145,0 -17.0592616056,62.4594092536,0 -15.053024866,63.2516838791,0 -10.8261240696,64.2745040896,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>CANTAT-3</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=CANTAT-3'>http://www.cablemap.info/?c=CANTAT-3</a>]]></description>
+				<styleUrl>#style.11</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-10.8261240696,64.2745040896,0 -8.8326879849,64.920252081,0 -6.9393196006,65.13596760030001,0 -4.9277265482,64.9029888158,0 -2.827170398599999,64.236214283,0 -0.7526335038999999,63.16060118239999,0 1.0522468277,61.7900463015,0 2.5021770034,60.1781578947,0 3.705582522399999,58.2406122874,0 5.2303930849,57.0265631576,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>AC-1</name>
+			<Style id="style.16">
+				<LineStyle>
+					<color>ff0075c3</color>
+					<width>2</width>
+				</LineStyle>
+			</Style>
+			<Placemark>
+				<name>AC-1</name>
+				<description><![CDATA[<hr><p>More Info at <a href='http://www.cablemap.info/?c=AC-1'>http://www.cablemap.info/?c=AC-1</a>]]></description>
+				<styleUrl>#style.16</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+					<coordinates>
+						-72.6948217412,40.7859991279,0 -70.91613764420001,39.8970825624,0 -68.740378501,39.2360162524,0 -67.0035915708,39.2785250234,0 -64.9692432433,39.2906703866,0 -61.0705816726,39.4910688785,0 -54.8217923325,40.38375307,0 -49.1134716526,41.6286527927,0 -40.8667700745,43.7480186622,0 -28.0534119525,47.3430461542,0 -17.0447612107,49.4260041771,0 -8.3232695173,50.0514621364,0 -5.699,50.082,0 -5.735008848100001,50.0682448334,0 -5.753600796600001,49.7404308965,0 -1.7647734169,50.0939709074,0 0.7371713917000001,50.2882967178,0 1.7877453041,51.5999959379,0 4.586230445,52.4876142752,0 4.5301830075,53.7360087858,0 8.307499999999999,54.91,0 7.7276620055,55.5457107306,0 6.2815296692,56.5795948289,0 4.6419056441,58.24350958030001,0 4.0285648051,58.6807426537,0 2.6585022837,58.97370442570001,0 -0.8088529413000001,59.6774257982,0 -3.1008005697,59.9268655014,0 -5.4246319694,59.90333518170001,0 -10.946629083,59.0634886903,0 -15.701298471,58.0469402654,0 -20.8081453493,56.7306786561,0 -33.3113584428,52.8641784525,0 -37.4129916986,51.3695050184,0 -43.9966584541,48.4132021385,0 -48.6163890824,46.5504342453,0 -56.95634970070001,43.7079476763,0 -62.3276267585,42.3027204475,0 -70.08851381060001,41.4525450271,0 -71.8070826961,40.9606578195,0 -72.6948217412,40.7859991279,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
